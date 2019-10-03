@@ -8,25 +8,21 @@
     <link rel="stylesheet" type="text/css" href="CSS/reset.css">
     <title>Les surfeurs du coin</title>
     <style>
-        p,
-        h1,
-        h2,
-        h3,
-        h4,
-        li {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
 
+        p, h1, h2, h3, h4, li {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
 
-        h1 {
+        header {
             position: relative;
-            margin-left: 0;
-            margin-right: 0;
-            width:75%;
-            height:75%;
-            background:url(banniere.png);
-            background-size : cover;
+            margin-left: 0px;
+            margin-right: 0px;
+            width:100%;
+            height:100px;
+            background:url(image/banniere.png) no-repeat center right;
+            background-size:initial;
             box-align: center;
+            flex-direction: row;
         }
 
         .bouton {
@@ -36,10 +32,9 @@
             border-radius: 5px;
             margin: 5px;
             padding-top: 5px;
-            background-color: rgb(0, 64, 182);
+            background-color:#2E5771;
             color: white;
             box-sizing: border-box;
-
         }
 
         .bouton a:visited {
@@ -47,12 +42,12 @@
         }
 
         .bouton:hover {
-            background-color: rgba(45, 96, 192);
+            background-color:#2E5771;
             box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.404);
         }
 
         .bouton:active {
-            background-color: rgb(1, 44, 122);
+            background-color:#65909F;
         }
 
         .conteneur-flex {
@@ -61,65 +56,79 @@
             height: auto;
             margin-left: auto;
             margin-right: auto;
-            border: 1px solid black;
-            background-color: rgb(81, 164, 241);
+            background-color: #B1D1DA;
             flex-direction: column;
             box-align: center;
-           
         }
 
-        .header,
-        .contenu,
-        .piedDePage,
-        .image {
+        .header, .contenu,.piedDePage,.image {
             display: flex;
             width: 100%;
-            border: 1px solid black;
             background-color: #E6E081;
-            margin: 5px;
-            padding: 10px;
-        }
-
-        .header {
-            height: 100px;
-            flex-direction: row;
-        }
-
-        .menu {
-            width: 100%;
-            border: none;
-            margin-top: 20px;
-        }
-
-        .contenu {
-            border: solid 1px black;
-            width: 100%;
         }
 
         .piedDePage {
             height: 100px;
         }
+        .menu {
+            width: 100%;
+            border: none;
+            background-color: #E6E081;
+        }
 
-        header h1 {
+        nav {
+            width:100%;
+            position: sticky;
+            margin: auto;
+            padding-top:20px;
+            padding-bottom: 20px;
+        }
+
+        nav ul {
+            list-style: none;
             text-align: center;
+            display: flex;
+            flex-flow: row wrap;
+            background-color: #E6E081;
         }
 
-        header img {
-            size: inherit
-        }
-
-        nav li {
-            width: 150px;
+        nav ul li {
+            flex: 1 1 auto;
             text-align: center;
-            float: left;
+            position :relative;
         }
+
+        .contenu {
+            width:80%;
+            padding-left:10%;
+            padding-right:10%;
+            padding-top:5%;
+            padding-bottom: 5%;
+            text-align: justify;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-size: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-bottom: 20px;
+        }
+
+        .piedDePage {
+            width:80%;
+            padding-left:10%;
+            padding-right:10%;
+            text-align: justify;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            line-height: 1.2;
+        }
+
     </style>
 </head>
 
 <body class="conteneur-flex">
-    <header class="header">
-        <h1>
-        </h1>
+    <header class="header"> </header>
         <nav class="menu">
             <ul>
                 <li class="bouton">Accueil</li>
@@ -127,8 +136,6 @@
                 <li class="bouton"><a href="Contact.html">Contact</a></li>
             </ul>
         </nav>
-    </header>
-
 
     <content class="contenu">
         <div>
