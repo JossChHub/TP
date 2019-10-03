@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="CSS/reset.css">
+    <title>Les surfeurs du coin</title>
+    <style>
+
+        p, h1, h2, h3, h4, li {
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+
+        header {
+            position: relative;
+            margin-left: 0px;
+            margin-right: 0px;
+            width:100%;
+            height:100px;
+            background:url(image/banniere.png) no-repeat center right;
+            background-size:initial;
+            box-align: center;
+            flex-direction: row;
+        }
+
+        .bouton {
+            border: 1px black solid;
+            height: 30px;
+            width: 100px;
+            border-radius: 5px;
+            margin: 5px;
+            padding-top: 5px;
+            background-color:#2E5771;
+            color: white;
+            box-sizing: border-box;
+        }
+
+        .bouton a:visited{
+            color: white;
+        }
+        .bouton a:link{
+            color: white;
+        }
+        .bouton:hover {
+            background-color:#2E5771;
+            box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.404);
+        }
+
+        .bouton:active {
+            background-color:#65909F;
+        }
+
+        .conteneur-flex {
+            display: flex;
+            width: 75%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #B1D1DA;
+            flex-direction: column;
+            box-align: center;
+        }
+
+        .header, .contenu,.piedDePage{
+            display: flex;
+            width: 100%;
+            background-color: #E6E081;
+        }
+
+        .piedDePage {
+            height: 100px;
+        }
+        .menu {
+            width: 100%;
+            border: none;
+            background-color: #E6E081;
+        }
+
+        nav {
+            width:100%;
+            margin: auto;
+            padding-top:20px;
+            padding-bottom: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            text-align: center;
+            display: flex;
+            flex-flow: row wrap;
+            background-color: #E6E081;
+        }
+
+        nav ul li {
+            flex: 1 1 auto;
+            text-align: center;
+            position :relative;
+        }
+
+        .contenu {
+            width:80%;
+            padding-left:10%;
+            padding-right:10%;
+            padding-top:5%;
+            padding-bottom: 5%;
+            text-align: justify;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-size: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-size: 25px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-bottom: 20px;
+        }
+
+        .piedDePage {
+            width:80%;
+            padding-left:10%;
+            padding-right:10%;
+            text-align: justify;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            line-height: 1.2;
+        }
+
+    </style>
+</head>
+
+<body class="conteneur-flex">
+    <header class="header"> </header>
+        <nav class="menu">
+            <ul>
+                <li class="bouton"><a href="Tp.html">Accueil</a></li>
+                <li class="bouton"><a href="spots.html">Les spots</a></li>
+                <li class="bouton"><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    <content class="contenu">
+        <div>
+            <h2>Les spots aquitains</h2>
+            <h3>Lacanau</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque, nisl eu varius porta,
+                dolor
+                magna accumsan dolor, a sodales dolor ligula sit amet velit. Proin id feugiat eros. Sed ut leo ut
+                neque
+                consectetur facilisis. Vestibulum nec mauris ac enim fermentum luctus vitae et nunc. Pellentesque
+                sit
+                amet lectus est. Suspendisse pretium leo pretium, tincidunt augue nec, lacinia metus. Praesent felis
+                odio, volutpat sed egestas non, rhoncus sit amet ante. Ut feugiat nec dolor quis imperdiet.
+
+            </p>
+            <img src="image/spotLacanau.jpg" alt="Lacanau" title="Lacanau">
+            <br>
+            <h3>Hossegor</h3>
+            <p> Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis posuere
+                rutrum dui id ultrices. Donec id massa suscipit, dapibus tortor tempus, mattis dolor. Ut hendrerit
+                orci risus, vel accumsan lorem gravida sit amet. Vivamus egestas semper erat, eu sodales ex
+                consequat quis. Nam hendrerit feugiat efficitur. Nunc congue sollicitudin nulla sed congue. Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan eleifend nulla, eget venenatis quam
+                faucibus pharetra. Nulla pellentesque felis vel viverra volutpat. Cras at massa ut ante egestas
+                tempor. Quisque vitae tristique urna, in elementum leo. Suspendisse tempus porttitor pulvinar.
+                Curabitur vestibulum a mi quis accumsan.
+            </p>
+            <br>
+            <h3>Hendaye</h3>
+            <p>Nam gravida purus at ornare rhoncus. Vestibulum in pulvinar felis, quis dictum quam. Sed cursus
+                lacus magna, quis dictum orci accumsan non. Nullam tristique porttitor sapien, a viverra tellus
+                convallis eget. Nulla tristique diam non nunc porttitor sodales at sed ante. Nullam viverra augue
+                velit. Duis venenatis est vel luctus aliquam. Quisque blandit sodales ipsum eu bibendum. Duis sed
+                turpis ut mi luctus tincidunt eu nec nunc. Sed lacinia auctor mi sed mollis. </p>
+        </div>
+    </content>
+    <footer class="piedDePage">
+        <h2> le footer</h2>
+
+    </footer>
+
+</body>
+
+</html>
