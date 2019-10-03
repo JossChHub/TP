@@ -19,8 +19,13 @@
         }
 
         h1 {
-            font-size: 2em;
-            text-decoration: underline;
+            position: relative;
+            margin-left: 0;
+            margin-right: 0;
+            width:100%;
+            height:75%;
+            background:url(banniere.png);
+            background-size : cover;
         }
 
         .bouton {
@@ -46,10 +51,15 @@
 
         .conteneur-flex {
             display: flex;
-            width: 100%;
+            width: 75%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
             border: 1px solid black;
             background-color: rgb(81, 164, 241);
             flex-direction: column;
+            box-align: center;
+           
         }
 
         .header,
@@ -59,7 +69,7 @@
             display: flex;
             width: 97%;
             border: 1px solid black;
-            background-color: rgb(243, 197, 111);
+            background-color: #E6E081;
             margin: 5px;
             padding: 10px;
         }
@@ -119,7 +129,10 @@
         }
 
         .contenu {
-            animation: animImage 5s;
+            animation-name: animImage;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+
         }
     </style>
 </head>
@@ -127,7 +140,6 @@
 <body class="conteneur-flex">
     <header class="header">
         <h1>
-            Le surf en Aquitaine
         </h1>
     </header>
 
@@ -140,7 +152,7 @@
     </nav>
     <content class="contenu">
         <div>
-            <h1>Le blabla</h1>
+            <h2>Le blabla</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque, nisl eu varius porta,
                 dolor
@@ -171,7 +183,7 @@
         </div>
     </content>
     <footer class="piedDePage">
-        <h1> le footer</h1>
+        <h2> le footer</h2>
 
     </footer>
 
