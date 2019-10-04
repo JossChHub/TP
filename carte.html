@@ -37,9 +37,9 @@
             margin: 5px;
             padding-top: 5px;
             background-color: #2E5771;
-            color: white;
             box-sizing: border-box;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 21px;
         }
         .bouton2 {
             border: 1px black solid;
@@ -94,13 +94,15 @@
         .bouton3 a:link,
         .bouton4 a:visited,
         .bouton4 a:link {
-            color: white ;
+            color: white;
+            text-decoration: none;
         }
         .map{
             width: 624px;
             height: 717px;
             background-image: url("image/aquitaine.jpg");
             background-size: cover;
+            margin-bottom: 80px;
         }
 
         .bouton:hover {
@@ -124,8 +126,7 @@
         }
 
         .header,
-        .contenu,
-        .piedDePage {
+        .contenu{
             display: flex;
             width: 100%;
             background-color: #E6E081;
@@ -179,15 +180,24 @@
         }
 
         h2 {
-            font-size: 30px;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 40px;
+            font-weight: bold;
+            color: #2E5771;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 25px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             margin-bottom: 20px;
+            color: #2E5771;
+            font-weight: bold;
         }
 
         .piedDePage {
             width: 100%;
-            padding-left: 0;
-            padding-right: 5%;
             text-align: justify;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             line-height: 1.2;
@@ -215,9 +225,17 @@
                 <div class="bouton4"><a href="spots.html#hendaye">Hendaye</a></div>
             </div>            
     </content>
+    
+    <hr color=" #2E5771" width="100%" size="17">
+    <br><br>
+
     <footer class="piedDePage">
         <h2>Qui sommes nous ?</h2>
-
+        <p>Cyprum itidem insulam procul a continenti discretam et portuosam inter municipia crebra urbes duae faciunt claram
+            Salamis et Paphus, altera Iovis delubris altera Veneris templo insignis. tanta autem tamque multiplici
+            fertilitate abundat rerum omnium eadem Cyprus ut nullius externi indigens adminiculi indigenis viribus a
+            fundamento ipso carinae ad supremos usque carbasos aedificet onerariam navem omnibusque armamentis instructam
+            mari committat.</p>
     </footer>
 
 </body>

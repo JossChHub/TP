@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="CSS/reset.css">
+    <link rel="icon" type="image/png" href="image/planche.png" />
     <title>Les surfeurs du coin</title>
     <style>
 
@@ -13,10 +14,12 @@
             font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
         }
 
+        p {
+            font-size: 17px;
+        }
+
         header {
             position: relative;
-            margin-left: 0px;
-            margin-right: 0px;
             width:100%;
             height:100px;
             background:url(image/banniere.png) no-repeat center right;
@@ -36,13 +39,16 @@
             color: white;
             box-sizing: border-box;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 21px;
         }
 
         .bouton a:visited {
             color: white;
+            text-decoration: none;
         }
         .bouton a:link{
             color: white;
+            text-decoration: none;
         }
         .bouton:hover {
             background-color:#2E5771;
@@ -64,14 +70,19 @@
             box-align: center;
         }
 
-        .header, .contenu,.piedDePage{
+        .header, .contenu {
             display: flex;
             width: 100%;
             background-color: #E6E081;
         }
 
         .piedDePage {
+            width: 100%;
             height: 100px;
+            text-align: justify;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            line-height: 1.2;
+            padding-bottom:300px;
         }
         .menu {
             width: 100%;
@@ -117,8 +128,11 @@
         }
 
         h2 {
-            font-size: 30px;
+            text-align: center;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 40px;
+            font-weight: bold;
+            color: #2E5771;
             margin-bottom: 20px;
         }
 
@@ -133,7 +147,7 @@
 
         #slide {
             width: 75%;
-            height:600px;
+            height:700px;
             animation-name: animslide;
             animation-duration: 4s;
             animation-iteration-count: infinite;
@@ -142,7 +156,7 @@
         
         img {
             width: 75%;
-            height: 600px;  
+            height: 700px;  
             position: absolute;  
             }
             
@@ -154,7 +168,7 @@
                     opacity: 1;
                 }
                 to {
-                background-image:url("image/surf1.png");   
+                background-image:url("image/surf4.png");   
 
                 }
 
@@ -175,7 +189,7 @@
         </nav>
 
         <div id="slide">
-            <img src="image/surf1.png"> <img src="image/surf2.png">
+            <img src="image/surf4.png"> 
         </div>
 
     <content class="contenu">
@@ -210,8 +224,26 @@
                 turpis ut mi luctus tincidunt eu nec nunc. Sed lacinia auctor mi sed mollis. </p>
         </div>
     </content>
+
+    <hr color=" #2E5771" width="100%" size="17">
+    <br><br>
+
     <footer class="piedDePage">
         <h2>Qui sommes nous ?</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque, nisl eu varius porta,
+            dolor
+            magna accumsan dolor, a sodales dolor ligula sit amet velit. Proin id feugiat eros. Sed ut leo ut
+            neque
+            consectetur facilisis. Vestibulum nec mauris ac enim fermentum luctus vitae et nunc. Pellentesque
+            sit
+            amet lectus est. Suspendisse pretium leo pretium, tincidunt augue nec, lacinia metus. Praesent felis
+            odio, volutpat sed egestas non, rhoncus sit amet ante. Ut feugiat nec dolor quis imperdiet.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque, nisl eu varius porta,
+            dolor.
+            <br><br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque, nisl eu varius porta,
+            dolor Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque, nisl eu varius porta,
+            dolor</p>
 
     </footer>
 
