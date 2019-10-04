@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="CSS/reset.css">
     <title>Contact</title>
 
     <style>
@@ -23,7 +24,7 @@
             background: #fff;
             border: 1px solid gray;
             border-radius: 6px;
-            margin-top: 200px;
+            margin-top: 20px;
         }
 
         div {
@@ -61,12 +62,134 @@
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size: 40px;
         }
+        
+        header {
+            position: relative;
+            margin-left: 0px;
+            margin-right: 0px;
+            width:100%;
+            height:100px;
+            background:url(image/banniere.png) no-repeat center right;
+            background-size:initial;
+            box-align: center;
+            flex-direction: row;
+        }
+
+        .conteneur-flex {
+            display: flex;
+            width: 75%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #B1D1DA;
+            flex-direction: column;
+            box-align: center;
+        }
+
+        .bouton {
+            border: 1px black solid;
+            height: 30px;
+            width: 100px;
+            border-radius: 5px;
+            margin: 5px;
+            padding-top: 5px;
+            background-color:#2E5771;
+            color: white;
+            box-sizing: border-box;
+        }
+
+        .bouton a:visited{
+            color: white;
+        }
+        .bouton a:link{
+            color: white;
+        }
+        .bouton:hover {
+            background-color:#2E5771;
+            box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.404);
+        }
+        .bouton:active {
+            background-color:#65909F;
+        }
+
+        .header, .contenu,.piedDePage{
+            display: flex;
+            width: 100%;
+            background-color: #E6E081;
+        }
+
+        .menu {
+            width: 100%;
+            border: none;
+            background-color: #E6E081;
+        }
+
+        nav {
+            width:100%;
+            margin: auto;
+            padding-top:20px;
+            padding-bottom: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            text-align: center;
+            display: flex;
+            flex-flow: row wrap;
+            background-color: #E6E081;
+        }
+
+        nav ul li {
+            flex: 1 1 auto;
+            text-align: center;
+            position :relative;
+    
+        }
+        nav>ul>li>a{
+            display: block;            
+        }
+
+        .contenu {
+            width:80%;
+            padding-left:10%;
+            padding-right:10%;
+            padding-top:5%;
+            padding-bottom: 5%;
+            text-align: justify;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            line-height: 1.2;
+            flex-flow: column nowrap;
+        }
+
+        h2 {
+            font-size: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-bottom: 20px;
+        }
+
+        .piedDePage {
+            width:80%;
+            height: 100px;
+            padding-left:10%;
+            padding-right:10%;
+            text-align: justify;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            line-height: 1.2;
+        }
     </style>
 
 </head>
 
-<body>
-
+<body class="conteneur-flex">
+        <header class="header"> </header>
+        <nav class="menu">
+            <ul>
+                <li class="bouton"><a href="Tp.html">Accueil</a></li>
+                <li class="bouton"><a href="spots.html">Les spots</a></li>
+                <li class="bouton"><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+<article class="contenu">
     <h1>Demande de contact</h1>
     <form methode="POST" action="" id="conteneur-flexible">
         <div id="element-flexible">
@@ -98,8 +221,18 @@
 
             <label> Laissez nous un petit message</label>
             <br><br>
-            <textarea name="text" rows="15" cols="50"></textarea>
+            <textarea name="text" rows="16" cols="40"></textarea>
             <br><br>
             <input type="submit" value="Envoyer" />
         </div>
     </form>
+</article>
+</body>
+    <footer class="piedDePage">
+            <h2>Qui sommes nous ?</h2>
+    
+        </footer>
+    
+    </body>
+    
+    </html>
