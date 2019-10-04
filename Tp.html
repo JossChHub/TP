@@ -9,10 +9,6 @@
     <title>Les surfeurs du coin</title>
     <style>
 
-        p, h1, h2, h3, h4, li {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-
         header {
             position: relative;
             margin-left: 0px;
@@ -35,6 +31,7 @@
             background-color:#2E5771;
             color: white;
             box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
 
         .bouton a:visited {
@@ -56,7 +53,7 @@
             height: auto;
             margin-left: auto;
             margin-right: auto;
-            background-color: #B1D1DA;
+            background-color:#E6E081;
             flex-direction: column;
             box-align: center;
         }
@@ -99,13 +96,14 @@
         }
 
         .contenu {
-            width:80%;
-            padding-left:10%;
-            padding-right:10%;
+            width:100%;
+            padding-left:0;
+            padding-right:0%;
             padding-top:5%;
             padding-bottom: 5%;
             text-align: justify;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 18px;
             line-height: 1.2;
         }
 
@@ -116,12 +114,41 @@
         }
 
         .piedDePage {
-            width:80%;
-            padding-left:10%;
-            padding-right:10%;
+            width:100%;
+            padding-left:0;
+            padding-right:5%;
             text-align: justify;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             line-height: 1.2;
+        }
+
+        #slide {
+            width: 75%;
+            height:600px;
+            animation-name: animslide;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction:alternate-reverse;
+            }
+        
+        img {
+            width: 75%;
+            height: 600px;  
+            position: absolute;  
+            }
+            
+            @keyframes animslide {
+                0% {
+                    opacity: 0;
+                }
+                60% {
+                    opacity: 1;
+                }
+                to {
+                background-image:url("image/surf1.png");   
+
+                }
+
         }
 
     </style>
@@ -136,6 +163,10 @@
                 <li class="bouton"><a href="Contact.html">Contact</a></li>
             </ul>
         </nav>
+
+        <div id="slide">
+            <img src="image/surf1.png"> <img src="image/surf2.png">
+        </div>
 
     <content class="contenu">
         <div>
