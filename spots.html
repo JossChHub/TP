@@ -21,7 +21,12 @@
             float: left;
         }
 
-        p, h1, h2, h3, h4, li {
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        li {
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
         }
 
@@ -48,7 +53,8 @@
             box-sizing: border-box;
         }
 
-        .bouton a:visited, .bouton a:link {
+        .bouton a:visited,
+        .bouton a:link {
             color: white;
         }
 
@@ -72,7 +78,9 @@
             box-align: center;
         }
 
-        .header, .contenu, .piedDePage {
+        .header,
+        .contenu,
+        .piedDePage {
             display: flex;
             width: 100%;
             background-color: #E6E081;
@@ -108,9 +116,9 @@
             text-align: center;
             position: relative;
         }
-        
-        nav>ul>li>a{
-            display: block;            
+
+        nav>ul>li>a {
+            display: block;
         }
 
         .contenu {
@@ -152,6 +160,7 @@
     <nav class="menu">
         <ul>
             <li class="bouton"><a href="Tp.html">Accueil</a></li>
+            <li class="bouton"><a href="carte.html">Carte de la région</a></li>
             <li class="bouton"><a href="spots.html">Les spots</a></li>
             <li class="bouton"><a href="Contact.html">Contact</a></li>
         </ul>
@@ -163,7 +172,7 @@
                 <img src="image/spotLacanau.jpg" alt="Lacanau" title="Lacanau" width="100%" height="100%">
                 <figcaption>La plage de Lacanau</figcaption>
             </figure>
-            <h3>Lacanau</h3>
+            <h3 id="lacanau">Lacanau</h3>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque, nisl eu varius porta,
                 dolor
@@ -174,12 +183,6 @@
                 amet lectus est. Suspendisse pretium leo pretium, tincidunt augue nec, lacinia metus. Praesent felis
                 odio, volutpat sed egestas non, rhoncus sit amet ante. Ut feugiat nec dolor quis imperdiet.
             </p>
-            <br>
-            <figure id="figure2">
-                <img src="image/spotHossegor.jpg" alt="Hossegor" title="Hossegor" width="100%" height="100%">
-                <figcaption>La plage de Hossegor</figcaption>
-            </figure>
-            <h3>Hossegor</h3>
             <p> Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis posuere
                 rutrum dui id ultrices. Donec id massa suscipit, dapibus tortor tempus, mattis dolor. Ut hendrerit
                 orci risus, vel accumsan lorem gravida sit amet. Vivamus egestas semper erat, eu sodales ex
@@ -190,20 +193,51 @@
                 Curabitur vestibulum a mi quis accumsan.
             </p>
             <br>
-            <figure id="figure3">
-                <img src="image/spotHendaye.jpg" alt="Hendaye" title="Hendaye" width="100%" height="100%">
-                <figcaption>La plage d'Hendaye</figcaption>
+            <figure id="figure2">
+                <img src="image/spotHossegor.jpg" alt="Hossegor" title="Hossegor" width="100%"
+                    height="100%">
+                <figcaption>La vague d'Hossegor</figcaption>
             </figure>
-            <h3>Hendaye</h3>
+            <h3 id="hossegor" >Hossegor</h3>
+            <p> Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis posuere
+                rutrum dui id ultrices. Donec id massa suscipit, dapibus tortor tempus, mattis dolor. Ut hendrerit
+                orci risus, vel accumsan lorem gravida sit amet. Vivamus egestas semper erat, eu sodales ex
+                consequat quis. Nam hendrerit feugiat efficitur. Nunc congue sollicitudin nulla sed congue. Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan eleifend nulla, eget venenatis quam
+                faucibus pharetra. Nulla pellentesque felis vel viverra volutpat. Cras at massa ut ante egestas
+                tempor. Quisque vitae tristique urna, in elementum leo. Suspendisse tempus porttitor pulvinar.
+                Curabitur vestibulum a mi quis accumsan.
+            </p>
             <p>Nam gravida purus at ornare rhoncus. Vestibulum in pulvinar felis, quis dictum quam. Sed cursus
                 lacus magna, quis dictum orci accumsan non. Nullam tristique porttitor sapien, a viverra tellus
                 convallis eget. Nulla tristique diam non nunc porttitor sodales at sed ante. Nullam viverra augue
                 velit. Duis venenatis est vel luctus aliquam. Quisque blandit sodales ipsum eu bibendum. Duis sed
                 turpis ut mi luctus tincidunt eu nec nunc. Sed lacinia auctor mi sed mollis. </p>
+            <br>
+            <figure id="figure3">
+                <img src="image/spotHendaye.jpg" alt="Hendaye" title="Hendaye" width="100%" height="100%">
+                <figcaption>La plage d'Hendaye</figcaption>
+            </figure>
+            <h3 id="hendaye">Hendaye</h3>
+            <p>Nam gravida purus at ornare rhoncus. Vestibulum in pulvinar felis, quis dictum quam. Sed cursus
+                lacus magna, quis dictum orci accumsan non. Nullam tristique porttitor sapien, a viverra tellus
+                convallis eget. Nulla tristique diam non nunc porttitor sodales at sed ante. Nullam viverra augue
+                velit. Duis venenatis est vel luctus aliquam. Quisque blandit sodales ipsum eu bibendum. Duis sed
+                turpis ut mi luctus tincidunt eu nec nunc. Sed lacinia auctor mi sed mollis. </p>
+            <p> Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis posuere
+                rutrum dui id ultrices. Donec id massa suscipit, dapibus tortor tempus, mattis dolor. Ut hendrerit
+                orci risus, vel accumsan lorem gravida sit amet. Vivamus egestas semper erat, eu sodales ex
+                consequat quis. Nam hendrerit feugiat efficitur. Nunc congue sollicitudin nulla sed congue. Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan eleifend nulla, eget venenatis quam
+                faucibus pharetra. Nulla pellentesque felis vel viverra volutpat. Cras at massa ut ante egestas
+                tempor. Quisque vitae tristique urna, in elementum leo. Suspendisse tempus porttitor pulvinar.
+                Curabitur vestibulum a mi quis accumsan.
+            </p>
         </div>
     </content>
     <footer class="piedDePage">
         <h3>Qui sommes nous ?</h2>
     </footer>
 </body>
+
 </html>
