@@ -82,7 +82,7 @@
 
         .conteneur-flex {
             display: flex;
-            width: 75%;
+            width: 95%;
             height: auto;
             margin-left: auto;
             margin-right: auto;
@@ -94,7 +94,6 @@
         .bouton {
             border: 1px black solid;
             height: 30px;
-            width: 100px;
             border-radius: 5px;
             margin: 5px;
             padding-top: 5px;
@@ -190,11 +189,17 @@
             line-height: 1.2;
             padding-bottom:300px;
         }
+        .enTete{
+            position: sticky;
+            z-index: 1;
+            top: 0;
+        }
     </style>
 
 </head>
 
 <body class="conteneur-flex">
+        <div class="enTete">
     <header class="header"> </header>
     <nav class="menu">
         <ul>
@@ -204,6 +209,7 @@
             <li class="bouton"><a href="Contact.html">Contact</a></li>
         </ul>
     </nav>
+    </div>
     <article class="contenu">
         <h1>Demande de contact</h1>
         <form methode="POST" action="" id="conteneur-flexible">

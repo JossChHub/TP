@@ -9,9 +9,13 @@
     <link rel="icon" type="image/png" href="image/planche.png" />
     <title>Le surf en Aquitaine</title>
     <style>
-
-        p, h1, h2, h3, h4, li {
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        li {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
         }
 
         p {
@@ -20,10 +24,10 @@
 
         header {
             position: relative;
-            width:100%;
-            height:100px;
-            background:url(image/banniere.png) no-repeat center right;
-            background-size:initial;
+            width: 100%;
+            height: 100px;
+            background: url(image/banniere.png) no-repeat center right;
+            background-size: initial;
             box-align: center;
             flex-direction: row;
         }
@@ -31,11 +35,10 @@
         .bouton {
             border: 1px black solid;
             height: 30px;
-            width: 100px;
             border-radius: 5px;
             margin: 5px;
             padding-top: 5px;
-            background-color:#2E5771;
+            background-color: #2E5771;
             color: white;
             box-sizing: border-box;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -47,31 +50,33 @@
             color: white;
             text-decoration: none;
         }
-        .bouton a:link{
+
+        .bouton a:link {
             color: white;
             text-decoration: none;
         }
+
         .bouton:hover {
-            background-color:#2E5771;
+            background-color: #2E5771;
             box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.404);
         }
 
         .bouton:active {
-            background-color:#65909F;
+            background-color: #65909F;
         }
 
         .conteneur-flex {
             display: flex;
-            width: 75%;
+            width: 95%;
             height: auto;
             margin-left: auto;
             margin-right: auto;
-            background-color:#E6E081;
+            background-color: #E6E081;
             flex-direction: column;
-            box-align: center;
         }
 
-        .header, .contenu {
+        .header,
+        .contenu {
             display: flex;
             width: 100%;
             background-color: #E6E081;
@@ -83,8 +88,9 @@
             text-align: justify;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             line-height: 1.2;
-            padding-bottom:300px;
+            padding-bottom: 300px;
         }
+
         .menu {
             width: 100%;
             border: none;
@@ -92,9 +98,9 @@
         }
 
         nav {
-            width:100%;
+            width: 100%;
             margin: auto;
-            padding-top:20px;
+            padding-top: 20px;
             padding-bottom: 20px;
         }
 
@@ -109,18 +115,19 @@
         nav ul li {
             flex: 1 1 auto;
             text-align: center;
-            position :relative;
+            position: relative;
         }
-        
-        nav>ul>li>a{
-            display: block;            
+
+        nav>ul>li>a {
+            display: block;
         }
 
         .contenu {
-            width:100%;
-            padding-left:0;
-            padding-right:0%;
-            padding-top:5%;
+            display: flex;
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0%;
+            padding-top: 5%;
             padding-bottom: 5%;
             text-align: justify;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -138,48 +145,57 @@
         }
 
         .piedDePage {
-            width:100%;
-            padding-left:0;
-            padding-right:5%;
+            width: 100%;
+            padding-left: 0;
+            padding-right: 5%;
             text-align: justify;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             line-height: 1.2;
         }
 
         #slide {
-            width: 75%;
-            height:600px;
+            display: flex;
+            width: 95%;
+            height: 200px;
             animation-name: animslide;
             animation-duration: 4s;
             animation-iteration-count: infinite;
-            animation-direction:alternate-reverse;
-            }
-        
-        img {
-            width: 75%;
-            height: 600px;  
-            position: absolute;  
-            }
-            
-            @keyframes animslide {
-                0% {
-                    opacity: 0;
-                }
-                60% {
-                    opacity: 1;
-                }
-                to {
-                background-image:url("image/surf4.png");   
-
-                }
-
+            animation-direction: alternate-reverse;
+            flex-flow: column wrap;
+            align-items: center;
+            margin-left: 30px;
         }
 
+        img {
+            display: block;
+            margin: auto;
+            width: 95%;
+            flex: 1 0 95%;
+            height: 200px;
+            /* position: absolute; */
+        }
+
+        @keyframes animslide {
+            0% {
+                opacity: 0;
+            }
+
+            60% {
+                opacity: 1;
+            }
+        }
+
+        .enTete {
+            position: sticky;
+            z-index: 1;
+            top: 0;
+        }
     </style>
 </head>
 
 <body class="conteneur-flex">
-    <header class="header"> </header>
+    <div class="enTete">
+        <header class="header"> </header>
         <nav class="menu">
             <ul>
                 <li class="bouton"><a href="Tp.html">Accueil</a></li>
@@ -188,10 +204,10 @@
                 <li class="bouton"><a href="Contact.html">Contact</a></li>
             </ul>
         </nav>
-
-        <div id="slide">
-            <img src="image/surf4.png"> 
-        </div>
+    </div>
+    <div id="slide">
+        <img src="image/surf.jpg">
+    </div>
 
     <content class="contenu">
         <div>
