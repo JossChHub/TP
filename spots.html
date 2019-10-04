@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="CSS/reset.css">
+    <link rel="icon" type="image/png" href="image/planche.png" />
+
     <title>Les surfeurs du coin</title>
     <style>
         figure {
@@ -14,7 +16,6 @@
             width: 240px;
             height: 159px;
             margin: 50px 20px 30px 20px;
-
         }
 
         #figure2 {
@@ -25,13 +26,15 @@
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
         }
 
+        p {
+            font-size: 18px;
+        }
+
         header {
             position: relative;
-            margin-left: 0px;
-            margin-right: 0px;
             width: 100%;
             height: 100px;
-            background: url(image/banniere.png) no-repeat center right;
+            background: url(image/banniere.png) no-repeat right;
             background-size: initial;
             box-align: center;
             flex-direction: row;
@@ -46,10 +49,13 @@
             padding-top: 5px;
             background-color: #2E5771;
             box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 21px;
         }
 
         .bouton a:visited, .bouton a:link {
             color: white;
+            text-decoration: none;
         }
 
         .bouton:hover {
@@ -67,19 +73,24 @@
             height: auto;
             margin-left: auto;
             margin-right: auto;
-            background-color: #B1D1DA;
+            background-color:#E6E081;
             flex-direction: column;
             box-align: center;
         }
 
-        .header, .contenu, .piedDePage {
+        .header, .contenu {
             display: flex;
             width: 100%;
             background-color: #E6E081;
         }
 
         .piedDePage {
+            width: 100%;
             height: 100px;
+            text-align: justify;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            line-height: 1.2;
+            padding-bottom:300px;
         }
 
         .menu {
@@ -114,9 +125,7 @@
         }
 
         .contenu {
-            width: 80%;
-            padding-left: 10%;
-            padding-right: 10%;
+            width: 100%;
             padding-top: 5%;
             padding-bottom: 5%;
             text-align: justify;
@@ -125,8 +134,11 @@
         }
 
         h2 {
-            font-size: 30px;
+            text-align: center;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 40px;
+            font-weight: bold;
+            color: #2E5771;
             margin-bottom: 20px;
         }
 
@@ -134,16 +146,17 @@
             font-size: 25px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             margin-bottom: 20px;
+            color: #2E5771;
+            font-weight: bold;
         }
 
         .piedDePage {
-            width: 80%;
-            padding-left: 10%;
-            padding-right: 10%;
+            width: 100%;
             text-align: justify;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             line-height: 1.2;
         }
+
     </style>
 </head>
 
@@ -173,37 +186,67 @@
                 sit
                 amet lectus est. Suspendisse pretium leo pretium, tincidunt augue nec, lacinia metus. Praesent felis
                 odio, volutpat sed egestas non, rhoncus sit amet ante. Ut feugiat nec dolor quis imperdiet.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque, nisl eu varius porta,
+                dolor.
+                <br><br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque, nisl eu varius porta,
+                dolor Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque, nisl eu varius porta,
+                dolor
             </p>
-            <br>
+            <br><br>
             <figure id="figure2">
                 <img src="image/spotHossegor.jpg" alt="Hossegor" title="Hossegor" width="100%" height="100%">
                 <figcaption>La plage de Hossegor</figcaption>
             </figure>
             <h3>Hossegor</h3>
-            <p> Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis posuere
-                rutrum dui id ultrices. Donec id massa suscipit, dapibus tortor tempus, mattis dolor. Ut hendrerit
-                orci risus, vel accumsan lorem gravida sit amet. Vivamus egestas semper erat, eu sodales ex
-                consequat quis. Nam hendrerit feugiat efficitur. Nunc congue sollicitudin nulla sed congue. Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit. Cras accumsan eleifend nulla, eget venenatis quam
-                faucibus pharetra. Nulla pellentesque felis vel viverra volutpat. Cras at massa ut ante egestas
-                tempor. Quisque vitae tristique urna, in elementum leo. Suspendisse tempus porttitor pulvinar.
-                Curabitur vestibulum a mi quis accumsan.
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque, nisl eu varius porta,
+                dolor
+                magna accumsan dolor, a sodales dolor ligula sit amet velit. Proin id feugiat eros. Sed ut leo ut
+                neque
+                consectetur facilisis. Vestibulum nec mauris ac enim fermentum luctus vitae et nunc. Pellentesque
+                sit
+                amet lectus est. Suspendisse pretium leo pretium, tincidunt augue nec, lacinia metus. Praesent felis
+                odio, volutpat sed egestas non, rhoncus sit amet ante. Ut feugiat nec dolor quis imperdiet.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque, nisl eu varius porta,
+                dolor.
+                <br><br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque, nisl eu varius porta,
+                dolor Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque, nisl eu varius porta,
+                dolor
             </p>
-            <br>
+            <br><br>
             <figure id="figure3">
                 <img src="image/spotHendaye.jpg" alt="Hendaye" title="Hendaye" width="100%" height="100%">
                 <figcaption>La plage d'Hendaye</figcaption>
             </figure>
             <h3>Hendaye</h3>
-            <p>Nam gravida purus at ornare rhoncus. Vestibulum in pulvinar felis, quis dictum quam. Sed cursus
-                lacus magna, quis dictum orci accumsan non. Nullam tristique porttitor sapien, a viverra tellus
-                convallis eget. Nulla tristique diam non nunc porttitor sodales at sed ante. Nullam viverra augue
-                velit. Duis venenatis est vel luctus aliquam. Quisque blandit sodales ipsum eu bibendum. Duis sed
-                turpis ut mi luctus tincidunt eu nec nunc. Sed lacinia auctor mi sed mollis. </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque, nisl eu varius porta,
+                dolor
+                magna accumsan dolor, a sodales dolor ligula sit amet velit. Proin id feugiat eros. Sed ut leo ut
+                neque
+                consectetur facilisis. Vestibulum nec mauris ac enim fermentum luctus vitae et nunc. Pellentesque
+                sit
+                amet lectus est. Suspendisse pretium leo pretium, tincidunt augue nec, lacinia metus. Praesent felis
+                odio, volutpat sed egestas non, rhoncus sit amet ante. Ut feugiat nec dolor quis imperdiet.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque, nisl eu varius porta,
+                dolor.
+                <br><br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque, nisl eu varius porta,
+                dolor Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque, nisl eu varius porta,
+                dolor
         </div>
     </content>
+
+    <hr color=" #2E5771" width="100%" size="17">
+    <br><br>
+
     <footer class="piedDePage">
-        <h3>Qui sommes nous ?</h2>
+        <h2>Qui sommes nous ?</h2>
+        <p>Cyprum itidem insulam procul a continenti discretam et portuosam inter municipia crebra urbes duae faciunt claram
+            Salamis et Paphus, altera Iovis delubris altera Veneris templo insignis. tanta autem tamque multiplici
+            fertilitate abundat rerum omnium eadem Cyprus ut nullius externi indigens adminiculi indigenis viribus a
+            fundamento ipso carinae ad supremos usque carbasos aedificet onerariam navem omnibusque armamentis instructam
+            mari committat.</p>
     </footer>
 </body>
 </html>

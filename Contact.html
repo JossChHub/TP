@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="CSS/reset.css">
+    <link rel="icon" type="image/png" href="image/planche.png" />
     <title>Contact</title>
 
     <style>
@@ -21,10 +22,14 @@
             flex: 0, 0, 50%;
             box-sizing: border-box;
             padding: 1em;
-            background: #fff;
-            border: 1px solid gray;
-            border-radius: 6px;
-            margin-top: 20px;
+            background: #EFFED7;
+            border: 3px solid #2E5771;
+            border-radius: 8px;
+            margin-top: 50px;
+        }
+
+        p {
+            font-size: 17px;
         }
 
         div {
@@ -32,19 +37,18 @@
         }
 
         input[type="textarea"] {
-            /* width: 450px;
-            height: 225px; */
-            border: 1px solid #555;
-            border-radius: 6px;
+            border: 3px solid #555;
+            border-radius: 8px;
             background: rgba(0, 0, 0, .02);
         }
 
         input[type="submit"] {
-            padding: .5em 1em;
-            border: black;
+            padding: .3em 1em;
+            border: #2E5771;
             border-radius: 6px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size: 17px;
+            background-color: #E6E081;
             cursor: pointer;
             margin-left: 40%;
         }
@@ -54,23 +58,24 @@
             margin-right: 1em;
             text-align: right;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 1.35em;
+            font-size: 1.40em;
         }
 
         H1 {
             text-align: center;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size: 40px;
+            font-weight: bold;
+            color: #2E5771;
+            margin-bottom: 20px;
         }
-        
+
         header {
             position: relative;
-            margin-left: 0px;
-            margin-right: 0px;
-            width:100%;
-            height:100px;
-            background:url(image/banniere.png) no-repeat center right;
-            background-size:initial;
+            width: 100%;
+            height: 100px;
+            background: url(image/banniere.png) no-repeat center right;
+            background-size: initial;
             box-align: center;
             flex-direction: row;
         }
@@ -81,7 +86,7 @@
             height: auto;
             margin-left: auto;
             margin-right: auto;
-            background-color: #B1D1DA;
+            background-color:#E6E081;          
             flex-direction: column;
             box-align: center;
         }
@@ -93,26 +98,34 @@
             border-radius: 5px;
             margin: 5px;
             padding-top: 5px;
-            background-color:#2E5771;
+            background-color: #2E5771;
             color: white;
             box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 21px;
         }
 
-        .bouton a:visited{
+        .bouton a:visited {
             color: white;
+            text-decoration: none;
         }
-        .bouton a:link{
+
+        .bouton a:link {
             color: white;
+            text-decoration: none;
         }
+
         .bouton:hover {
-            background-color:#2E5771;
+            background-color: #2E5771;
             box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.404);
         }
+
         .bouton:active {
-            background-color:#65909F;
+            background-color: #65909F;
         }
 
-        .header, .contenu,.piedDePage{
+        .header,
+        .contenu, {
             display: flex;
             width: 100%;
             background-color: #E6E081;
@@ -125,9 +138,9 @@
         }
 
         nav {
-            width:100%;
+            width: 100%;
             margin: auto;
-            padding-top:20px;
+            padding-top: 20px;
             padding-bottom: 20px;
         }
 
@@ -142,18 +155,16 @@
         nav ul li {
             flex: 1 1 auto;
             text-align: center;
-            position :relative;
-    
+            position: relative;
         }
-        nav>ul>li>a{
-            display: block;            
+
+        nav>ul>li>a {
+            display: block;
         }
 
         .contenu {
-            width:80%;
-            padding-left:10%;
-            padding-right:10%;
-            padding-top:5%;
+            width: 100%;
+            padding-top: 5%;
             padding-bottom: 5%;
             text-align: justify;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -162,77 +173,88 @@
         }
 
         h2 {
-            font-size: 30px;
+            text-align: center;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 40px;
+            font-weight: bold;
+            color: #2E5771;
             margin-bottom: 20px;
         }
 
         .piedDePage {
-            width:80%;
+            width: 100%;
             height: 100px;
-            padding-left:10%;
-            padding-right:10%;
             text-align: justify;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             line-height: 1.2;
+            padding-bottom:300px;
         }
     </style>
 
 </head>
 
 <body class="conteneur-flex">
-        <header class="header"> </header>
-        <nav class="menu">
-            <ul>
-                <li class="bouton"><a href="Tp.html">Accueil</a></li>
-                <li class="bouton"><a href="spots.html">Les spots</a></li>
-                <li class="bouton"><a href="Contact.html">Contact</a></li>
-            </ul>
-        </nav>
-<article class="contenu">
-    <h1>Demande de contact</h1>
-    <form methode="POST" action="" id="conteneur-flexible">
-        <div id="element-flexible">
-            <label>Civilité :</label>
-            <br><br>
-            <label>Mr</label><input type="radio" name="gender" value="mr" required />
-            <label>Mme</label><input type="radio" name="gender" value="mme" required />
-            <label>Mlle</label> <input type="radio" name="gender" value="mlle" required />
-            <br><br>
+    <header class="header"> </header>
+    <nav class="menu">
+        <ul>
+            <li class="bouton"><a href="Tp.html">Accueil</a></li>
+            <li class="bouton"><a href="spots.html">Les spots</a></li>
+            <li class="bouton"><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <article class="contenu">
+        <h1>Demande de contact</h1>
+        <form methode="POST" action="" id="conteneur-flexible">
+            <div id="element-flexible">
+                <label>Civilité :</label>
+                <br><br>
+                <label>Mr</label><input type="radio" name="gender" value="mr" required />
+                <label>Mme</label><input type="radio" name="gender" value="mme" required />
+                <label>Mlle</label> <input type="radio" name="gender" value="mlle" required />
+                <br><br>
 
-            <label>Nom : </label>
-            <br><br>
-            <input name="nom" type="text" size="30" />
-            <br><br>
+                <label>Nom : </label>
+                <br><br>
+                <input name="nom" type="text" size="30" required />
+                <br><br>
 
-            <label>Prénom : </label>
-            <br><br>
-            <input name="prenom" type="text" size="30" />
-            <br><br>
+                <label>Prénom : </label>
+                <br><br>
+                <input name="prenom" type="text" size="30" required />
+                <br><br>
 
-            <label for="mail">E-mail : </label>
-            <br><br>
-            <input name="mail" type="email" id="mail" size="30" required
-                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,8}$" />
-            <br><br>
-        </div>
+                <label for="mail">E-mail : </label>
+                <br><br>
+                <input name="mail" type="email" id="mail" size="30" required
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,8}$" />
+                <br><br>
+            </div>
 
-        <div id="element-flexible">
+            <div id="element-flexible">
 
-            <label> Laissez nous un petit message</label>
-            <br><br>
-            <textarea name="text" rows="16" cols="40"></textarea>
-            <br><br>
-            <input type="submit" value="Envoyer" />
-        </div>
-    </form>
-</article>
+                <label> Laissez nous un petit message</label>
+                <br><br>
+                <textarea name="text" rows="16" cols="40"></textarea>
+                <br><br>
+                <input type="submit" value="Envoyer" />
+            </div>
+        </form>
+    </article>
+
+    <hr color=" #2E5771" width="100%" size="17">
+    <br><br>
+
+<footer class="piedDePage">
+    <h2>Qui sommes nous ?</h2>
+    <br><br>
+    <p>Cyprum itidem insulam procul a continenti discretam et portuosam inter municipia crebra urbes duae faciunt claram
+        Salamis et Paphus, altera Iovis delubris altera Veneris templo insignis. tanta autem tamque multiplici
+        fertilitate abundat rerum omnium eadem Cyprus ut nullius externi indigens adminiculi indigenis viribus a
+        fundamento ipso carinae ad supremos usque carbasos aedificet onerariam navem omnibusque armamentis instructam
+        mari committat.</p>
+
+</footer>
+
 </body>
-    <footer class="piedDePage">
-            <h2>Qui sommes nous ?</h2>
-    
-        </footer>
-    
-    </body>
-    
-    </html>
+
+</html>
